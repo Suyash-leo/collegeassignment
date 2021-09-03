@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// program to count the frequency of each lowercase character in a string
+	string s; cin>>s;
+	int arr[26]={};
+	for(int i=0;i<s.size();i++)
+	{
+	    arr[s[i]-'a']++;
+	}
+	int a=0;
+	for(char ch='a';ch<='z';ch++)
+	{
+	    cout<<"frequency of "<<ch<<" in the string = "<<arr[a]<<"\n";
+	    a++;
+	}
+	return 0;
+}
